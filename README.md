@@ -20,8 +20,8 @@ Communication system for education
 
 ## Models
 
-Model        | Content        | Sub
------------- | -------------- | ------------
+Model        | Content        | Sub            | detail   
+------------ | -------------- | ------------   | ------------
 users        | id             | `uuid`         | _  
 _            | name           | `string`       | _
 _            | email          | `string`       | _
