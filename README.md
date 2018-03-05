@@ -25,7 +25,7 @@ Model        | Content        | Sub
 users        | id             | `uuid`         | _  
 _            | name           | `string`       | _
 _            | email          | `string`       | _
-_            | password       | `securely stored by firebase`
+_            | password       | `securely stored by firebase` | _
 _            | classes        | id             | `reference` classes/:class
 _            | _              | name           | `string`
 _            | _              | school         | `string`
