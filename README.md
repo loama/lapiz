@@ -22,9 +22,9 @@ Communication system for education
 
 Model        | Content        | Sub
 ------------ | -------------- | ------------
-users        | id             | `uuid`
-             | name           | `string`
-             | email          | `string`
+users        | id             | `uuid`         |
+             | name           | `string`       |
+             | email          | `string`       |
              | password       | `securely stored by firebase`
              | classes        | id             | `reference` classes/:class
              |                | name           | `string`
@@ -32,18 +32,18 @@ users        | id             | `uuid`
              |                | threads        | `reference` threads/:thread
              |                |                | `string` name
              |                |                | `boolean` notify
-classes      | id             | `uuid`
-             | key            | `string` (short id for joining and other things)   
-             | title          | `string`
+classes      | id             | `uuid`         |
+             | key            | `string` (short id for joining and other things) |
+             | title          | `string`       |
              | school         | `reference` opt (id, name)
              | users          | reference      | `fk` users/:user
              |                | name           | `string`
              | threads        | reference      | `fk` threads/:thread
              |                | title          | `string`
-schools      | id             | `uuid`
-             | name           | `string`
-threads      | id             | `uuid`  
-             | name           | `string`
+schools      | id             | `uuid`         |
+             | name           | `string`       |
+threads      | id             | `uuid`         |
+             | name           | `string`       |
              | participants   | reference      | `reference` users/:user
              |                | name           | `string`
              | messages       | id             | `uuid`
