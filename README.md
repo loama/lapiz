@@ -22,9 +22,9 @@ Communication system for education
 
 Model        | Content        | Sub
 ------------ | -------------- | ------------
-users        | id             | `uuid`         
-_            | name           | `string`       
-_            | email          | `string`       
+users        | id             | `uuid`         | _  
+_            | name           | `string`       | _
+_            | email          | `string`       | _
 _            | password       | `securely stored by firebase`
 _            | classes        | id             | `reference` classes/:class
 _            | _              | name           | `string`
@@ -32,18 +32,18 @@ _            | _              | school         | `string`
 _            | _              | threads        | `reference` threads/:thread
 _            | _              |                | `string` name
 _            | _              |                | `boolean` notify
-classes      | id             | `uuid`         
-_            | key            | `string` (short id for joining and other things)
-_            | title          | `string`       
-_            | school         | `reference` opt (id, name)
+classes      | id             | `uuid`         | _
+_            | key            | `string` (short id for joining and other things) | _
+_            | title          | `string`       | _
+_            | school         | `reference` opt (id, name) | _
 _            | users          | reference      | `fk` users/:user
 _            | _              | name           | `string`
 _            | threads        | reference      | `fk` threads/:thread
 _            | _              | title          | `string`
-schools      | id             | `uuid`         
-_            | name           | `string`       
-threads      | id             | `uuid`         
-_            | name           | `string`       
+schools      | id             | `uuid`         | _
+_            | name           | `string`       | _
+threads      | id             | `uuid`         | _
+_            | name           | `string`       | _
 _            | participants   | reference      | `reference` users/:user
 _            | _              | name           | `string`
 _            | messages       | id             | `uuid`
