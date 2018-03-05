@@ -23,39 +23,39 @@ Communication system for education
 Model        | Content        | Sub
 ------------ | -------------- | ------------
 users        | id             | `uuid`         
-             | name           | `string`       
-             | email          | `string`       
-             | password       | `securely stored by firebase`
-             | classes        | id             | `reference` classes/:class
-             |                | name           | `string`
-             |                | school         | `string`
-             |                | threads        | `reference` threads/:thread
-             |                |                | `string` name
-             |                |                | `boolean` notify
+_            | name           | `string`       
+_            | email          | `string`       
+_            | password       | `securely stored by firebase`
+_            | classes        | id             | `reference` classes/:class
+_            | _              | name           | `string`
+_            | _              | school         | `string`
+_            | _              | threads        | `reference` threads/:thread
+_            | _              |                | `string` name
+_            | _              |                | `boolean` notify
 classes      | id             | `uuid`         
-             | key            | `string` (short id for joining and other things)
-             | title          | `string`       
-             | school         | `reference` opt (id, name)
-             | users          | reference      | `fk` users/:user
-             |                | name           | `string`
-             | threads        | reference      | `fk` threads/:thread
-             |                | title          | `string`
+_            | key            | `string` (short id for joining and other things)
+_            | title          | `string`       
+_            | school         | `reference` opt (id, name)
+_            | users          | reference      | `fk` users/:user
+_            | _              | name           | `string`
+_            | threads        | reference      | `fk` threads/:thread
+_            | _              | title          | `string`
 schools      | id             | `uuid`         
-             | name           | `string`       
+_            | name           | `string`       
 threads      | id             | `uuid`         
-             | name           | `string`       
-             | participants   | reference      | `reference` users/:user
-             |                | name           | `string`
-             | messages       | id             | `uuid`
-             |                | to             |  `reference` {{users_or_threads}}/:user_or_thread
-             |                |                | `string` name
-             |                |                | `string` type ('user' / 'thread' )
-             |                | from           | `reference` :id _(of user)_
-             |                | type           | `string` :text / :snippet / :file
-             |                | subtype        | `string` if type = __snippet:__ :javascript / :python / :html / :latex / :css
-             |                |    ↑           | if type = __file:__ :gdoc /  :gsheet / :gslide / :txt / :pdf / :image
-             |                | comment        | `string` (only if subtype = snippet)
-             |                | content        | `string` content of message or url of file
+_            | name           | `string`       
+_            | participants   | reference      | `reference` users/:user
+_            | _              | name           | `string`
+_            | messages       | id             | `uuid`
+_            | _              | to             |  `reference` {{users_or_threads}}/:user_or_thread
+_            | _              |                | `string` name
+_            | _              |                | `string` type ('user' / 'thread' )
+_            | _              | from           | `reference` :id _(of user)_
+_            | _              | type           | `string` :text / :snippet / :file
+_            | _              | subtype        | `string` if type = __snippet:__ :javascript / :python / :html / :latex / :css
+_            | _              |    ↑           | if type = __file:__ :gdoc /  :gsheet / :gslide / :txt / :pdf / :image
+_            | _              | comment        | `string` (only if subtype = snippet)
+_            | _              | content        | `string` content of message or url of file
 
 ## Common actions
 
